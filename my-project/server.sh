@@ -1,5 +1,5 @@
 sh ./build.sh
 
-export PORT=8000
+export PORT=80
 echo '...Server runnning on port ' $PORT
-python3 manage.py runserver $PORT
+python3 manage.py runserver 0:$PORT
